@@ -98,7 +98,7 @@ public class Application {
         log.info("View contract at https://rinkeby.etherscan.io/address/" + contractAddress);
 
         log.info("Value stored in remote smart contract: " + contract.greet().send());
-        log.info("Value stored in  contract: " + Data.data);
+        log.info("Value stored in pp contract: " + Data.data);
 
         // Lets modify the value in our smart contract
         TransactionReceipt transactionReceipt = contract.newGreeting(Data.data).send();
@@ -116,6 +116,12 @@ public class Application {
                     + ", new value: " + Numeric.toHexString(event.newGreetingIdx));
         }
     }
+    
+    
+    
+    
+    
+    
   /*  public static void runWithValue() throws Exception {
 
         // We start by creating a new web3j instance to connect to remote nodes on the network.
@@ -176,7 +182,22 @@ public class Application {
                     + ", new value: " + Numeric.toHexString(event.newGreetingIdx));
         }
     }
-    /*
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+	/*
 	 * public static void runWithValue(String value) throws Exception {
 	 * 
 	 * // We start by creating a new web3j instance to connect to remote nodes on
